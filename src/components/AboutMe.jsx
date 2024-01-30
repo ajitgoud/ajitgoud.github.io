@@ -11,24 +11,27 @@ export default function AboutMe() {
       <div className="flex flex-col-reverse space-y-8 space-y-reverse  md:flex md:flex-row md:space-x-4 lg:space-x-8">
         <div className="flex-1 space-y-8">
           <p className={`${aboutMeParaClasses} `}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            velit obcaecati a officiis culpa enim consequatur fugit quibusdam
-            commodi impedit. Eveniet, ex similique. Necessitatibus, repudiandae
-            voluptatem. Architecto iste blanditiis quisquam.
+            Hi, I am Ajit Goud a passionate Software Engineer with 3+ years of
+            experience developing user-centric applications. During this period,
+            I have accumulated extensive industry experience in designing
+            cutting-edge applications that deliver awesome experiences for users
           </p>
 
           <p className={`${aboutMeParaClasses} `}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            velit obcaecati a officiis culpa enim consequatur fugit quibusdam
-            commodi impedit. Eveniet, ex similique. Necessitatibus, repudiandae
-            voluptatem. Architecto iste blanditiis quisquam.
+            At SuperUs Systems, I worked on developing solutions to communicate
+            with BLE devices. I developed ReactJs based Canvas webapps and apps
+            to provide users with a canvas experience where they can craft
+            custom templates and also worked with digital signages.
+          </p>
+          <p className={`${aboutMeParaClasses} `}>
+            At Tata Consultancy Services, I focused on developing internal
+            applications and optimizing them, resulting in a 20% improvement.
+            Also submitted process improvement twice saving more than $1000 CAD.
           </p>
 
           <p className={`${aboutMeParaClasses}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            velit obcaecati a officiis culpa enim consequatur fugit quibusdam
-            commodi impedit. Eveniet, ex similique. Necessitatibus, repudiandae
-            voluptatem. Architecto iste blanditiis quisquam.
+            Thank you for stopping by my portfolio! Let's connect and embark on
+            a journey of innovation together.
           </p>
         </div>
         <div className="flex-1">

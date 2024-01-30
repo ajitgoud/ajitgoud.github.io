@@ -63,7 +63,7 @@ export default function Navigation() {
               </button>
             </li>
 
-            <li>
+            {/* <li>
               <button
                 onClick={() => handleMobileNavigation(true, "/contact")}
                 className={
@@ -72,7 +72,7 @@ export default function Navigation() {
               >
                 Contact
               </button>
-            </li>
+            </li> */}
 
           </ul>
         </nav>
@@ -132,7 +132,7 @@ export default function Navigation() {
               </NavLink>
             </li> */}
 
-            <li>
+            {/* <li>
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
@@ -142,7 +142,7 @@ export default function Navigation() {
               >
                 Contact
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <button
