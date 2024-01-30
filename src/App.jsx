@@ -25,7 +25,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: "https://ajitgoud.github.io/" }
+  
 );
 
 export default function App() {
