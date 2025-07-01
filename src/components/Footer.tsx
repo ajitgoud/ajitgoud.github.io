@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <ul className="flex flex-wrap md:space-x-12 md:items-center text-end space-y-2 md:space-y-0">
+          <ul className="flex flex-wrap md:space-x-12 md:items-center text-end space-y-2 space-x-2 md:space-y-0">
             {showRoutes.map((route) => (
               <li key={route.title} className="text-slate-400 hover:text-slate-300">
                 <Link href={route.path}>{route.title}</Link>
@@ -45,7 +45,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <p className="text-end mt-4 md:mt-0">
+      <p className="text-center md:text-end mt-4 md:mt-0">
         &copy; {new Date().getFullYear()} - All rights reserved
       </p>
     </div>
