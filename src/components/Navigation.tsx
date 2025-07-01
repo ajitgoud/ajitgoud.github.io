@@ -12,8 +12,7 @@ export default function Navigation() {
   const links = [
     { href: "/", label: "Home", exact: true },
     { href: "/about", label: "About", exact: true },
-    { href: "/projects", label: "Projects", exact: false },
-    { href: "/blogs", label: "Blogs", exact: false },
+    { href: "/projects", label: "Projects", exact: false }
   ];
 
   const isActive = (href: string, exact = true) => {

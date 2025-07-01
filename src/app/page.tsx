@@ -19,10 +19,10 @@ export default function HomePage() {
         Ajit Goud
       </h1>
       <h2 className="mt-3 mb-2 text-2xl md:text-6xl text-[var(--app-snow-100)] text-center font-semibold">
-        Software Engineer 
+        Software Engineer
       </h2>
-      <p className="text-md md:text-2xl text-slate-500 text-center max-w-2xl">
-        Android | ReactJS | NodeJS | AI | BLE | Real-time Communication
+      <p className="whitespace-nowrap overflow-x-auto text-md md:text-2xl text-slate-500 text-center pt-2 pb-4">
+      Android • Kotlin • Bluetooth • Audio • Streaming • WebRTC • Wake Word • AI
       </p>
       <button
         onClick={handleDownloadResume}
