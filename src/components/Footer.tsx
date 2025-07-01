@@ -8,8 +8,7 @@ import { GithubIcon, TwitterIcon, LinkedInIcon } from "@/components/Icons";
 const routes = [
   { path: "/", title: "Home" },
   { path: "/about", title: "About" },
-  { path: "/projects", title: "Projects" },
-  { path: "/blogs", title: "Blogs" },
+  { path: "/projects", title: "Projects" }
 ];
 
 export default function Footer() {
