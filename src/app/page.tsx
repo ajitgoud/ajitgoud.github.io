@@ -21,9 +21,17 @@ export default function HomePage() {
       <h2 className="mt-3 mb-2 text-2xl md:text-6xl text-[var(--app-snow-100)] text-center font-semibold">
         Software Engineer
       </h2>
-      <p className="whitespace-nowrap overflow-x-auto text-md md:text-2xl text-slate-500 text-center pt-2 pb-4">
-      Android • Kotlin • Bluetooth • Audio • Streaming • WebRTC • Wake Word • AI
-      </p>
+
+      <div className="flex flex-wrap justify-center gap-x-2 gap-y-1 text-md md:text-2xl text-slate-500">
+        <span>Android</span>
+        <span>• Kotlin</span>
+        <span>• Bluetooth</span>
+        <span>• Audio</span>
+        <span>• Streaming</span>
+        <span>• WebRTC</span>
+        <span>• Wake Word</span>
+        <span>• AI</span>
+      </div>
       <button
         onClick={handleDownloadResume}
         className="mt-8 inline-flex items-center space-x-2 border border-[var(--app-green)] text-slate-400 fill-slate-400 px-6 py-2 rounded hover:text-slate-300 hover:fill-slate-300 transition-colors"

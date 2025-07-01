@@ -12,7 +12,7 @@ export default function AboutMe() {
       <h1 className="text-4xl underline decoration-[var(--app-green)] underline-offset-8">
         About me
       </h1>
-      <div className="flex flex-col-reverse space-y-reverse md:flex-row md:space-x-4 lg:space-x-8 md:items-start">
+      <div className="flex flex-col-reverse space-y-reverse space-y-8 md:space-y-0 md:flex-row md:space-x-4 lg:space-x-8 md:items-start">
         <div className="flex-1 space-y-8">
           <p className={aboutMeParaClasses}>
             Hi, I’m Ajit Goud, an Android Engineer with{" "}
