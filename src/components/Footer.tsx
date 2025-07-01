@@ -24,13 +24,13 @@ export default function Footer() {
             AJIT GOUD
           </Link>
           <div className="flex space-x-2 mt-2">
-            <Link href="https://twitter.com/ImAjit27" target="_blank" className="rounded-full p-2 outline outline-1">
+            <Link href="https://twitter.com/ImAjit27" target="_blank" className="rounded-full p-2 outline">
               <TwitterIcon className="w-4 h-4 fill-slate-300 hover:fill-slate-100" />
             </Link>
-            <Link href="https://www.linkedin.com/in/ajit-goud/" target="_blank" className="rounded-full p-2 outline outline-1">
+            <Link href="https://www.linkedin.com/in/ajit-goud/" target="_blank" className="rounded-full p-2 outline">
               <LinkedInIcon className="w-4 h-4 fill-slate-300 hover:fill-slate-100" />
             </Link>
-            <Link href="https://github.com/ajitgoud" target="_blank" className="rounded-full p-2 outline outline-1">
+            <Link href="https://github.com/ajitgoud" target="_blank" className="rounded-full p-2 outline">
               <GithubIcon className="w-4 h-4 fill-slate-300 hover:fill-slate-100" />
             </Link>
           </div>
