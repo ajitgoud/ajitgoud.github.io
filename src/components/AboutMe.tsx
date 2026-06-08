@@ -15,44 +15,53 @@ export default function AboutMe() {
       <div className="flex flex-col-reverse space-y-reverse space-y-8 md:space-y-0 md:flex-row md:space-x-4 lg:space-x-8 md:items-start">
         <div className="flex-1 space-y-8">
           <p className={aboutMeParaClasses}>
-            Hi, I’m Ajit Goud, an Android Engineer with{" "}
-            {`${getExperienceYears()}`}+ years of experience building
-            high-performance, scalable apps and modular SDKs. I specialize in
-            Kotlin/Java, Bluetooth communication (Classic & BLE), voice AI (VAD,
-            wake word), and React Native integrations via TurboModules.
+            Android Engineer with {`${getExperienceYears()}`}+ years of experience
+            building scalable mobile applications and modular SDKs across IoT,
+            fintech, media streaming, and health-tech domains. At NeoSoft, I work
+            across multiple product-driven clients, developing real-time Android
+            solutions and device-integrated applications.
           </p>
+
           <p className={aboutMeParaClasses}>
-            At Jio Tesseract, I led development for smart glasses features:
+            For a Smart Glasses platform (Jio Tesseract), I led development of the
+            Android companion application and contributed to a modular Android SDK
+            powering device communication and media workflows. My work involved
+            Bluetooth (Classic & BLE) connectivity, RFCOMM-based audio streaming,
+            real-time voice interaction pipelines using Silero VAD, wake-word
+            detection with Picovoice and Sensory SDK, and WebRTC-based data transfer
+            with NACK handling. I also integrated LiveKit for low-latency video
+            streaming and enabled seamless React Native integration through
+            TurboModules.
           </p>
-          <ul className="list-disc list-inside text-slate-400 text-lg space-y-2">
-            <li>
-              Audio streaming (RFCOMM), WebRTC PoCs, wake word detection
-              (Picovoice, Sensory)
-            </li>
-            <li>
-              AI assistant integration, real-time translation, visual search
-            </li>
-            <li>
-              IMC 2024 demo delivery with seamless voice-controlled workflows
-            </li>
-            <li>
-              SDKs and companion apps with BLE pairing, media sync, AI
-              interactions
-            </li>
-          </ul>
+
           <p className={aboutMeParaClasses}>
-            Previously at SuperUs Systems, I delivered Android + BLE solutions
-            for ESL systems and signage, and built a ReactJS/Fabric.js canvas
-            tool for template design.
+            For a fintech client (BHIM UPI Plugin), I contributed to the development
+            of a modular Android payment SDK enabling direct UPI transactions. I built
+            Jetpack Compose-based payment flows, implemented API and data layers using
+            Ktor, integrated dependency injection with Koin, and enhanced transaction
+            security through SSL pinning and code obfuscation.
           </p>
+
           <p className={aboutMeParaClasses}>
-            I'm passionate about crafting intuitive, future-ready experiences
-            through clean architecture, robust communication stacks, and
-            AI-driven workflows. Skilled in Agile environments with JIRA, Git,
+            For a media streaming client (Audiaa), I optimized live FM playback using
+            ExoPlayer, improved Room database performance, resolved memory leaks and
+            lifecycle-related issues, and improved analytics reliability.
+          </p>
+
+          <p className={aboutMeParaClasses}>
+            Previously at SuperUs Systems, I developed Android applications using BLE
+            for ESL tag management and built digital signage solutions. I also
+            engineered real-time QR communication systems using WebSockets and
+            contributed to a ReactJS-based template editor for device content design.
+          </p>
+
+          <p className={aboutMeParaClasses}>
+            My core expertise includes Kotlin, Jetpack Compose, MVVM, Clean
+            Architecture, Coroutines, Flow, Bluetooth (BLE & Classic), WebRTC, and SDK
+            development. I work comfortably in Agile environments using Git, JIRA,
             and Confluence.
           </p>
         </div>
-
         <div className="flex-1">
           <Image
             src={profile_pic}
