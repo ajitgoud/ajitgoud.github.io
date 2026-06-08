@@ -7,47 +7,126 @@ type SkillData = {
   skills: string[];
 };
 
+// const skills: SkillData[] = [
+//   {
+//     name: "Languages",
+//     skills: ["Kotlin", "Java", "Python", "Javascript", "Typescript", "YAML"],
+//   },
+//   {
+//     name: "Android Development",
+//     skills: [
+//       "Android SDK",
+//       "Jetpack Components",
+//       "Coroutines",
+//       "Firebase (Auth, Firestore, Cloud Functions)",
+//       "RESTful APIs",
+//       "Hilt (DI)",
+//       "AAR Packaging",
+//       "Gradle",
+//       "Espresso",
+//       "Unit Testing",
+//       "Jetpack Compose",
+//       "Bluetooth (Classic & BLE)",
+//       "LiveKit",
+//       "WebRTC",
+//     ],
+//   },
+//   {
+//     name: "Architecture & SDK",
+//     skills: ["MVVM", "Modular SDK Development", "TurboModules (React Native)"],
+//   },
+//   {
+//     name: "Web & Cross-Platform",
+//     skills: [
+//       "ReactJS",
+//       "Next.js",
+//       "Node.js",
+//       "Flask",
+//       "Express",
+//       "Apache Airflow",
+//       "HTML",
+//       "CSS",
+//       "Tailwind CSS",
+//       "Flutter",
+//     ],
+//   },
+//   {
+//     name: "Databases",
+//     skills: ["Room", "SQLite", "MySQL", "MongoDB"],
+//   },
+//   {
+//     name: "Dev Tools & Practices",
+//     skills: [
+//       "Git",
+//       "GitHub",
+//       "GitLab",
+//       "JIRA",
+//       "Confluence",
+//       "Code Review",
+//       "Debugging",
+//       "Agile/Scrum",
+//       "Postman",
+//       "Figma",
+//     ],
+//   },
+//   {
+//     name: "Computer Science Fundamentals",
+//     skills: ["Data Structures", "Algorithms", "System Design"],
+//   },
+// ];
+
 const skills: SkillData[] = [
   {
-    name: "Languages",
-    skills: ["Kotlin", "Java", "Python", "Javascript", "Typescript", "YAML"],
-  },
-  {
-    name: "Android Development",
+    name: "Core Android",
     skills: [
+      "Kotlin",
+      "Java",
       "Android SDK",
       "Jetpack Components",
-      "Coroutines",
-      "Firebase (Auth, Firestore, Cloud Functions)",
-      "RESTful APIs",
-      "Hilt (DI)",
-      "AAR Packaging",
-      "Gradle",
-      "Espresso",
-      "Unit Testing",
       "Jetpack Compose",
-      "Bluetooth (Classic & BLE)",
-      "LiveKit",
-      "WebRTC",
+      "Coroutines & Flow",
+      "Lifecycle Management",
+      "Room",
+      "DataStore",
+      "Retrofit",
+      "ExoPlayer",
+      "Dependency Injection (Hilt, Koin)",
+      "Gradle",
+      "Unit Testing",
+      "Espresso",
     ],
   },
   {
-    name: "Architecture & SDK",
-    skills: ["MVVM", "Modular SDK Development", "TurboModules (React Native)"],
+    name: "Connectivity & Real-Time Systems",
+    skills: [
+      "Bluetooth Low Energy (BLE)",
+      "Bluetooth Classic",
+      "WebRTC",
+      "WebSockets",
+      "Audio Streaming",
+      "Voice Activity Detection (Silero VAD)",
+      "Wake Word Integration (Picovoice, Sensory)",
+      "LiveKit",
+    ],
   },
   {
-    name: "Web & Cross-Platform",
+    name: "Architecture & SDK Development",
     skills: [
-      "ReactJS",
-      "Next.js",
-      "Node.js",
-      "Flask",
-      "Express",
-      "Apache Airflow",
-      "HTML",
-      "CSS",
-      "Tailwind CSS",
-      "Flutter",
+      "MVVM",
+      "Clean Architecture",
+      "SDK Development",
+      "Multi-Module Architecture",
+      "TurboModules (React Native)",
+      "System Design",
+    ],
+  },
+  {
+    name: "Fintech & Security",
+    skills: [
+      "UPI Integration",
+      "Payment SDKs",
+      "SSL Pinning",
+      "Code Obfuscation",
     ],
   },
   {
@@ -55,26 +134,23 @@ const skills: SkillData[] = [
     skills: ["Room", "SQLite", "MySQL", "MongoDB"],
   },
   {
-    name: "Dev Tools & Practices",
+    name: "Tools & Delivery",
     skills: [
       "Git",
-      "GitHub",
-      "GitLab",
       "JIRA",
       "Confluence",
-      "Code Review",
-      "Debugging",
       "Agile/Scrum",
+      "Code Reviews",
+      "Debugging",
       "Postman",
-      "Figma",
+      "CI/CD Basics",
     ],
   },
   {
-    name: "Computer Science Fundamentals",
-    skills: ["Data Structures", "Algorithms", "System Design"],
+    name: "Additional Exposure",
+    skills: ["Python", "TypeScript", "JavaScript"],
   },
 ];
-
 type SkillProps = {
   skill: SkillData;
 };

@@ -40,20 +40,49 @@ const experiences: ExperienceType[] = [
     ],
     projects: [
       {
+        title: "LTFS",
+        descriptions: [
+          "Developed pre-approved loan offer journeys for eligible customers based on repayment history, enabling faster loan processing with minimal documentation.",
+          "Implemented digital consent form workflows to support customer onboarding and regulatory compliance requirements.",
+          "Built collection-related features to support branch cash collection operations."
+        ],
+      },
+      {
+        title: "Audiaa",
+        descriptions: [
+          "Optimized live FM radio streaming using ExoPlayer, improving playback stability and reducing buffering-related interruptions by ~30%.",
+          "Identified and resolved memory leaks and lifecycle mismanagement issues, reducing long-session crashes and improving playback reliability.",
+          "Refactored Room database operations by consolidating multi-step insert/update flows, reducing database I/O overhead and improving UI responsiveness by ~25%.",
+          "Offloaded heavy API and database operations from the main thread using coroutines, minimizing UI blocking and reducing frame drops.",
+          "Fixed duplicate analytics events (play, profile view, link clicks), restoring accurate Mixpanel and Firebase reporting for user behavior tracking."
+        ],
+      },
+      {
+        title: "Hatio (BHIMPlugin SDK)",
+        descriptions: [
+          "Contributed to the development of a modular Android SDK enabling direct UPI payments via BHIM, removing dependency on third-party payment applications.",
+          "Implemented end-to-end payment screens using Jetpack Compose, Navigation, and ViewModel, ensuring state-driven and maintainable UI flows.",
+          "Developed API and data layer components using Ktor and integrated them with the UI layer following Clean Architecture principles.",
+          "Integrated Koin for dependency injection to maintain modularity and improve code maintainability.",
+          "Implemented SSL pinning and code obfuscation to enhance transaction security and protect sensitive payment workflows.",
+          "Collaborated with backend and product teams to ensure smooth SDK integration within host applications.",
+        ],
+      },
+      {
         title: "Jio Tesseract",
         descriptions: [
           "Development of a modular Android SDK for smart glasses, aiming to encapsulate core components like device communication, audio handling, settings, and APIs to support scalable feature integration.",
           "Integrated the native Android SDK with a React Native app using TurboModules, enabling high-performance cross-platform interaction.",
           "Implemented audio streaming via Bluetooth RFCOMM as part of a PoC to emulate smart glass behavior for mock devices.",
-          "Designed and built voice-driven workflows, where user prompts were captured via mic, with Silero VAD detecting silence (end of prompt), and routed to AI for real-time interaction.",
+          "Designed and built voice-driven workflows, where user prompts were captured via mic,with Silero VAD detecting silence (end of prompt), and routed to AI for real-time interaction.",
           "Enabled contextual voice features such as music control (Spotify), assistant responses, navigation, calls, and notifications—driven by natural language prompts.",
-          "Spearheaded feature readiness and delivery for the IMC 2024 showcase, demonstrating cutting-edge capabilities like voice AI, visual search, multi-language support, and live video streaming—contributing to a highly successful product demo.",
+          "Feature readiness and delivery for the IMC 2024 showcase, demonstrating cutting-edge capabilities like voice AI, visual search, multi-language support, and live video streaming—contributing to a highly successful product demo.",
           "Implemented wake word detection using Picovoice, later enhanced with Sensory SDK, enabling passive, hands-free voice activation.",
           "Developed Bluetooth Classic and BLE-based pairing for seamless connectivity between glasses and the companion app.",
           "Built custom camera features for image/video capture, and integrated LiveKit for low-latency video streaming.",
           "Conducted a WebRTC-based PoC for reliable data transfer using negative acknowledgments (NACK), ensuring lossless transmission of large files.",
           "Authored key architecture documents (HLD, SBS) and conducted internal knowledge sharing sessions on Bluetooth, audio processing, wake word logic, and native-module integration.",
-          "Contributed to competitor analysis by reverse-engineering key app flows to inform internal product decisions.",
+          "Contributed to competitor analysis by reverse-engineering key app flows.",
         ],
       },
       {
