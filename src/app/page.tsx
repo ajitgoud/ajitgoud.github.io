@@ -1,5 +1,7 @@
 'use client';
 
+import { GithubIcon, LinkedInIcon } from '@/components/Icons';
+import Link from 'next/link';
 import React from 'react';
 
 export default function HomePage() {
@@ -23,14 +25,14 @@ export default function HomePage() {
       </h2>
 
       <div className="flex flex-wrap justify-center gap-x-2 gap-y-1 text-md md:text-2xl text-slate-500">
-        <span>Android</span>
-        <span>• Kotlin</span>
-        <span>• Bluetooth</span>
-        <span>• Audio</span>
-        <span>• Streaming</span>
-        <span>• WebRTC</span>
-        <span>• Wake Word</span>
+        <span>Java</span>
+        <span>• Spring Boot</span>
+        <span>• Microservices</span>
+        <span>• Distributed Systems</span>
+        <span>• Sockets</span>
         <span>• AI</span>
+        <span>• WebRTC</span>
+        <span>• BLE</span>
       </div>
       <button
         onClick={handleDownloadResume}
@@ -49,6 +51,27 @@ export default function HomePage() {
         </svg>
         <span className="text-lg md:text-2xl">Download Resume</span>
       </button>
+      <div className="flex items-center gap-4 mt-6">
+        <Link
+          href="https://www.linkedin.com/in/ajit-goud/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          className="rounded-full p-3 outline outline-slate-600 hover:outline-[var(--app-green)] transition-colors"
+        >
+          <LinkedInIcon className="w-5 h-5 md:w-6 md:h-6 fill-slate-400 hover:fill-slate-200" />
+        </Link>
+
+        <Link
+          href="https://github.com/ajitgoud"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          className="rounded-full p-3 outline outline-slate-600 hover:outline-[var(--app-green)] transition-colors"
+        >
+          <GithubIcon className="w-5 h-5 md:w-6 md:h-6 fill-slate-400 hover:fill-slate-200" />
+        </Link>
+      </div>
     </div>
   );
 }

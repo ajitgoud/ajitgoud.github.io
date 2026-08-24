@@ -15,52 +15,51 @@ export default function AboutMe() {
       <div className="flex flex-col-reverse space-y-reverse space-y-8 md:space-y-0 md:flex-row md:space-x-4 lg:space-x-8 md:items-start">
         <div className="flex-1 space-y-8">
           <p className={aboutMeParaClasses}>
-            Android Engineer with {`${getExperienceYears()}`}+ years of experience
-            building scalable mobile applications and modular SDKs across IoT,
-            fintech, media streaming, and health-tech domains. At NeoSoft, I work
-            across multiple product-driven clients, developing real-time Android
-            solutions and device-integrated applications.
+            Software Engineer with {`${getExperienceYears()}`}+ years of
+            experience building applications, backend integrations, and
+            real-time systems across financial services, connected devices,
+            media, and enterprise platforms. My work spans API development,
+            system integrations, data processing, and communication between
+            distributed components.
+            </p>
+
+          <p className={aboutMeParaClasses}>
+            At Tata Consultancy Services, I worked on production applications,
+    automation workflows, and data-processing systems using Python, Apache
+    Airflow, PySpark, Hive, and HDFS. I helped automate repetitive workflows,
+    validate and promote data-processing models, and maintain a reporting
+    platform generating 200+ reports daily. I also contributed process
+    improvements that reduced operational effort and delivered over CAD
+    $2,000 in annual savings.
           </p>
 
           <p className={aboutMeParaClasses}>
-            For a Smart Glasses platform (Jio Tesseract), I led development of the
-            Android companion application and contributed to a modular Android SDK
-            powering device communication and media workflows. My work involved
-            Bluetooth (Classic & BLE) connectivity, RFCOMM-based audio streaming,
-            real-time voice interaction pipelines using Silero VAD, wake-word
-            detection with Picovoice and Sensory SDK, and WebRTC-based data transfer
-            with NACK handling. I also integrated LiveKit for low-latency video
-            streaming and enabled seamless React Native integration through
-            TurboModules.
+            At SuperUs Systems, I worked across backend and connected-device
+    solutions. I developed Java middleware for DynamicQR devices, Spring Boot
+    services and REST APIs for web platforms, and BLE-based systems for
+    Electronic Shelf Labels. These systems connected web applications with
+    physical devices, enabling real-time QR updates and reliable bulk ESL
+    updates, while the BLE transfer improvements reduced average tag update
+    time by 20%.
           </p>
 
           <p className={aboutMeParaClasses}>
-            For a fintech client (BHIM UPI Plugin), I contributed to the development
-            of a modular Android payment SDK enabling direct UPI transactions. I built
-            Jetpack Compose-based payment flows, implemented API and data layers using
-            Ktor, integrated dependency injection with Koin, and enhanced transaction
-            security through SSL pinning and code obfuscation.
+            At NeoSoft, I have worked across multiple client platforms spanning
+    financial services, media, and smart-glass systems. My work includes API
+    and data-layer development, backend AI integrations, WebSocket and
+    Socket.IO communication, WebRTC, and LiveKit. These efforts enabled
+    real-time AI interactions, low-latency video streaming, dynamic
+    configuration delivery, and connected-device experiences showcased at
+    IMC 2024.
           </p>
 
           <p className={aboutMeParaClasses}>
-            For a media streaming client (Audiaa), I optimized live FM playback using
-            ExoPlayer, improved Room database performance, resolved memory leaks and
-            lifecycle-related issues, and improved analytics reliability.
+            I'm currently focused on backend engineering and distributed
+            systems, with particular interest in scalable services,
+            event-driven architectures, real-time applications, cloud
+            infrastructure, and AI-powered systems.
           </p>
 
-          <p className={aboutMeParaClasses}>
-            Previously at SuperUs Systems, I developed Android applications using BLE
-            for ESL tag management and built digital signage solutions. I also
-            engineered real-time QR communication systems using WebSockets and
-            contributed to a ReactJS-based template editor for device content design.
-          </p>
-
-          <p className={aboutMeParaClasses}>
-            My core expertise includes Kotlin, Jetpack Compose, MVVM, Clean
-            Architecture, Coroutines, Flow, Bluetooth (BLE & Classic), WebRTC, and SDK
-            development. I work comfortably in Agile environments using Git, JIRA,
-            and Confluence.
-          </p>
         </div>
         <div className="flex-1">
           <Image
