@@ -6,149 +6,74 @@ type SkillData = {
   name: string;
   skills: string[];
 };
-
-// const skills: SkillData[] = [
-//   {
-//     name: "Languages",
-//     skills: ["Kotlin", "Java", "Python", "Javascript", "Typescript", "YAML"],
-//   },
-//   {
-//     name: "Android Development",
-//     skills: [
-//       "Android SDK",
-//       "Jetpack Components",
-//       "Coroutines",
-//       "Firebase (Auth, Firestore, Cloud Functions)",
-//       "RESTful APIs",
-//       "Hilt (DI)",
-//       "AAR Packaging",
-//       "Gradle",
-//       "Espresso",
-//       "Unit Testing",
-//       "Jetpack Compose",
-//       "Bluetooth (Classic & BLE)",
-//       "LiveKit",
-//       "WebRTC",
-//     ],
-//   },
-//   {
-//     name: "Architecture & SDK",
-//     skills: ["MVVM", "Modular SDK Development", "TurboModules (React Native)"],
-//   },
-//   {
-//     name: "Web & Cross-Platform",
-//     skills: [
-//       "ReactJS",
-//       "Next.js",
-//       "Node.js",
-//       "Flask",
-//       "Express",
-//       "Apache Airflow",
-//       "HTML",
-//       "CSS",
-//       "Tailwind CSS",
-//       "Flutter",
-//     ],
-//   },
-//   {
-//     name: "Databases",
-//     skills: ["Room", "SQLite", "MySQL", "MongoDB"],
-//   },
-//   {
-//     name: "Dev Tools & Practices",
-//     skills: [
-//       "Git",
-//       "GitHub",
-//       "GitLab",
-//       "JIRA",
-//       "Confluence",
-//       "Code Review",
-//       "Debugging",
-//       "Agile/Scrum",
-//       "Postman",
-//       "Figma",
-//     ],
-//   },
-//   {
-//     name: "Computer Science Fundamentals",
-//     skills: ["Data Structures", "Algorithms", "System Design"],
-//   },
-// ];
-
 const skills: SkillData[] = [
   {
-    name: "Core Android",
+    name: "Languages",
     skills: [
-      "Kotlin",
       "Java",
-      "Android SDK",
-      "Jetpack Components",
-      "Jetpack Compose",
-      "Coroutines & Flow",
-      "Lifecycle Management",
-      "Room",
-      "DataStore",
-      "Retrofit",
-      "ExoPlayer",
-      "Dependency Injection (Hilt, Koin)",
-      "Gradle",
-      "Unit Testing",
-      "Espresso",
+      "Python",
+      "Kotlin",
+      "SQL",
+      "JavaScript",
     ],
   },
   {
-    name: "Connectivity & Real-Time Systems",
+    name: "Backend",
     skills: [
-      "Bluetooth Low Energy (BLE)",
-      "Bluetooth Classic",
-      "WebRTC",
+      "Spring Boot",
+      "REST APIs",
+      "Microservices",
       "WebSockets",
-      "Audio Streaming",
-      "Voice Activity Detection (Silero VAD)",
-      "Wake Word Integration (Picovoice, Sensory)",
+      "Socket.IO",
+      "JPA / Hibernate",
+    ],
+  },
+  {
+    name: "Data & Messaging",
+    skills: [
+      "PostgreSQL",
+      "Redis",
+      "Kafka",
+      "RabbitMQ",
+      "Apache Airflow",
+      "Apache Spark",
+    ],
+  },
+  {
+    name: "Cloud & DevOps",
+    skills: [
+      "AWS",
+      "Docker",
+      "Docker Compose",
+      "Kubernetes",
+      "Helm",
+      "Jenkins",
+      "CI/CD",
+      "Linux",
+    ],
+  },
+  {
+    name: "AI & Real-Time",
+    skills: [
+      "OpenAI",
+      "Groq",
+      "WebRTC",
       "LiveKit",
+      "BLE",
     ],
   },
   {
-    name: "Architecture & SDK Development",
+    name: "Engineering",
     skills: [
-      "MVVM",
-      "Clean Architecture",
-      "SDK Development",
-      "Multi-Module Architecture",
-      "TurboModules (React Native)",
       "System Design",
-    ],
-  },
-  {
-    name: "Fintech & Security",
-    skills: [
-      "UPI Integration",
-      "Payment SDKs",
-      "SSL Pinning",
-      "Code Obfuscation",
-    ],
-  },
-  {
-    name: "Databases",
-    skills: ["Room", "SQLite", "MySQL", "MongoDB"],
-  },
-  {
-    name: "Tools & Delivery",
-    skills: [
+      "Distributed Systems",
+      "API Design",
+      "ReactJS",
+      "Unit Testing",
       "Git",
       "JIRA",
       "Confluence",
-      "Agile/Scrum",
-      "Code Reviews",
-      "Debugging",
-      "Postman",
-      "CI/CD Basics",
     ],
-  },
-  {
-    name: "Additional Exposure",
-    skills: ["Python", "TypeScript", "JavaScript"],
   },
 ];
 type SkillProps = {
