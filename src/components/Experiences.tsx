@@ -35,17 +35,13 @@ const experiences: ExperienceType[] = [
   "RAG",
   "OpenAI",
   "Groq",
-  "Google Cloud",
-  "BLE",
 ],
     descriptions: [
-      "Developed API and data-layer components for a UPI payment SDK, handling service integration, request/response processing, validation, and payment-state management across the payment lifecycle.",
-"Deployed and configured LiveKit for low-latency video streaming, and developed a WebRTC-based PoC for reliable large-file transfer using NACK-based retransmission with RSA key exchange and AES encryption.",
-"Developed backend AI workflows integrating OpenAI, Groq, and Google Cloud services, and exposed AI capabilities through WebSocket/Socket.IO endpoints to enable real-time, bidirectional communication with frontend clients.",
-"Developed REST APIs for persisting and retrieving dynamic UI configurations as JSON, enabling server-driven UI updates and centralized configuration management.",
-"Developed demo for showcase at IMC 2024, integrating LiveKit-based video streaming, WebRTC communication, wake-word/VAD pipelines, and connected-device interactions into a unified smart-glass experience and making it a huge success.",
-"Developed Bluetooth Classic and BLE communication workflows for connected-device platforms, handling device pairing, data exchange, and asynchronous communication between devices and application services.",
-"Created and maintained HLD & SBS documentation for application and SDK architecture, documenting system components, flows, integrations, and key technical decisions to support development and cross-team alignment.",
+      "Designed a modular SDK encapsulating device communication, audio processing, and API integrations, with defined interfaces between application components and external services.",
+"Integrated LiveKit/WebRTC streaming into an AI-enabled workflow, supporting real-time video interactions and backend request monitoring",
+"Built AI proofs of concept using OpenAI and Groq APIs for translation, voice interaction, summarization, and intent detection.",
+"Prototyped reliable WebRTC file transfer with NACK-based retransmission and RSA/AES encryption.",
+"Authored high-level and software architecture documents covering components, data flows, and system integrations.",
     ]
     ,
   },
@@ -67,12 +63,10 @@ const experiences: ExperienceType[] = [
   "Serial Communication",
 ],
     descriptions: [
-      "Developed backend services and REST APIs for a digital signage platform, enabling content management, scheduling, and delivery of online/offline images and videos, along with dynamic website content through URL-based integration.",
-"Built an end-to-end ESL template management platform, developing the Spring Boot backend and REST APIs alongside a ReactJS + Fabric.js canvas editor for creating, editing, importing, exporting, and persisting templates, with seamless integration into ESL device workflows.",
-"Developed and enhanced a Java-based DynamicQR middleware for real-time payment processing, generating dynamic QR codes from transaction data such as UPI ID and amount, transmitting them to physical QR devices over serial communication, and managing device states across payment initiation, success, failure, and idle conditions.",
-"Developed a meeting-room management solution, implementing REST APIs and backend workflows for room availability, scheduling, and meeting management.",
-"Developed android applications for managing and updating Electronic Shelf Labels (ESL) over Bluetooth Low Energy (BLE), supporting dynamic template customization, single and bulk updates, and reliable image/data transfer.",
-"Improved BLE-based image transfer for ESL devices, achieving a 20% reduction in average update time while maintaining reliable bulk updates across multiple tags."
+      "Built an end-to-end ESL template platform: a Spring Boot backend and REST APIs (create, edit, import, export, persist) with a ReactJS + Fabric.js canvas editor. Added tag-based dynamic templates, where designers tag text fields once and the Android app fills them at runtime, so one template serves every user instead of a separate design per person.",
+"Developed a Java middleware for real-time UPI payments: generated dynamic QR codes from transaction data (UPI ID, amount), pushed them to QR devices over serial communication, and managed device states across initiation, success, failure and idle.",
+"Built REST APIs and backend workflows for a meeting-room solution (availability, scheduling) and a digital-signage content platform (scheduling and delivery of images, videos, web content).",
+"As part of a small startup team also worked on: Android/BLE ESL apps (20% faster image transfer), a battery-analytics app for ESL tags, and a Java-to-Kotlin migration of a legacy app; presented the products at a 3-day showcase in BKC, Mumbai.",
     ],
   },
   {
@@ -94,12 +88,10 @@ const experiences: ExperienceType[] = [
   "CI/CD",
 ],
     descriptions: [
-      "Built and executed Apache Spark/PySpark jobs for large-scale data processing, leveraging Hive queries for data analysis and HDFS for data loading and distributed storage.",
-"Performed quality assurance and validation of data-processing models by testing new model versions, verifying outputs, identifying issues, and deploying validated changes to higher environments.",
+      "Built and ran PySpark jobs with Hive queries on HDFS for large-scale data processing; validated new model versions, verified outputs and promoted them to higher environments.",
 "Developed a Flask + Jinja2 web portal to streamline and automate model-testing workflows, reducing repetitive manual effort, minimizing unintended errors, and saving approximately CAD 1,000 annually.",
-"Maintained and enhanced a production reporting platform generating 200+ reports daily, monitoring scheduled jobs, debugging production issues, and ensuring reliable report generation and delivery.",
-"Worked with Docker, Kubernetes, Jenkins, and CI/CD pipelines to support application deployment, environment management, and continuous integration workflows; assisted team members with production troubleshooting and operational issues.",
-"Proposed and implemented two process improvements that reduced operational effort and improved team efficiency, with each improvement delivering approximately CAD 1,000 in annual savings."
+"Maintained a production reporting platform generating 200+ reports daily: monitored scheduled jobs, debugged production issues, ensured reliable delivery.",
+"Built a Flask + Jinja2 portal automating model-testing workflows; supported Docker, Kubernetes and Jenkins CI/CD deployments. Three process improvements saved CAD 3,000 annually.",
     ],
   },
 ];
