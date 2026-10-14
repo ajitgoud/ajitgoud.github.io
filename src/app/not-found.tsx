@@ -1,22 +1,14 @@
-'use client';
-
 import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="h-full flex flex-col items-center justify-center px-4 text-center space-y-4">
-      <h1 className="text-6xl md:text-8xl font-bold text-[var(--app-green)]">
-        404
-      </h1>
-      <p className="text-xl md:text-2xl text-slate-400">
-        Sorry, the page you’re looking for doesn’t exist.
-      </p>
-      <Link
-        href="/"
-        className="px-4 py-2 border rounded-md border-[var(--app-green)] text-[var(--app-green)] hover:bg-[var(--app-green)] hover:text-[var(--app-dark)] transition-colors"
-      >
-        Go Home
+    <main className="mx-auto flex min-h-screen max-w-xl flex-col items-start justify-center gap-4 px-6">
+      <p className="font-mono text-sm text-accent">404</p>
+      <h1 className="font-display text-4xl font-semibold tracking-tight">Page not found</h1>
+      <p className="text-muted">This page does not exist. The portfolio is a single page.</p>
+      <Link href="/" className="rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-bg">
+        Go to home
       </Link>
-    </div>
+    </main>
   );
 }

@@ -1,26 +1,37 @@
-import Navigation from "@/components/Navigation";
+import type { Metadata, Viewport } from "next";
+import "@fontsource-variable/bricolage-grotesque";
+import "@fontsource-variable/geist";
+import "@fontsource-variable/geist-mono";
 import "./globals.css";
-import type { Metadata } from "next";
-import { montserrat } from "@/utils/fonts";
+import { profile } from "@/data/profile";
 
-
-export const metadata = {
-  title: "Ajit Goud – Portfolio",
-  description: "Fullstack & Android Specialist – Ajit Goud's personal portfolio site",
+export const metadata: Metadata = {
+  title: `${profile.name} | ${profile.title}`,
+  description: `${profile.name}: ${profile.title}. ${profile.tagline}`,
+  metadataBase: new URL("https://ajitgoud.tech"),
+  openGraph: {
+    title: `${profile.name} | ${profile.title}`,
+    description: profile.tagline,
+    type: "website",
+  },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export const viewport: Viewport = {
+  themeColor: "#0c0e13",
+  colorScheme: "dark",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`h-screen flex flex-col bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300  [font-family:var(--font-montserrat)]`}>
-        <Navigation />
-        <main className={`flex-1 ${montserrat.variable}`}>
-          {children}
-        </main>
+    <html lang="en">
+      <body>
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-accent focus:px-3 focus:py-2 focus:text-bg"
+        >
+          Skip to content
+        </a>
+        {children}
       </body>
     </html>
   );
