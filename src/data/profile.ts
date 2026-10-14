@@ -7,13 +7,16 @@ export const profile = {
   name: "Ajit Goud",
   title: "Java Backend Engineer",
   location: "Mumbai, India",
-  // Shown as a small status line in the hero. Set to false to hide it.
+
   openToWork: true,
-  openToWorkText: "Open to senior backend roles",
+  openToWorkText: "Open to Senior Backend Engineer roles",
+
   tagline:
-  "I build Java backend services: REST APIs, real-time communication and data pipelines.",
+    "Backend engineering by day, building and experimenting with AI systems along the way..",
+
   summary:
-    "Java backend engineer with 5+ years across REST APIs, enterprise applications and real-time systems. I work with Spring Boot, Spring Security, JPA/Hibernate and PostgreSQL, with hands-on Kafka, Redis, Docker and Kubernetes. I care about correctness under failure: idempotent writes, safe retries and systems that are observable when something goes wrong.",
+    "Java Backend Engineer with 5.6+ years of software engineering experience across enterprise applications, backend services, data processing, and real-time systems. Experienced in building Spring Boot REST APIs, payment middleware, and data-processing pipelines, with expertise in Java, Spring Security, JPA/Hibernate, PostgreSQL, and distributed systems. Hands-on experience with Kafka, Redis, Docker, and Kubernetes, alongside developing GenAI solutions including voice-to-voice assistants with tool calling and agentic RAG systems using OpenAI, Groq, Spring AI, pgvector, and MCP.",
+
   email: "ajitgoud.career@gmail.com",
   github: "https://github.com/ajitgoud",
   linkedin: "https://www.linkedin.com/in/ajit-goud/",
