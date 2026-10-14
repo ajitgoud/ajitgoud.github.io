@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ajitgoud.github.io
 
-## Getting Started
+Personal portfolio. Next.js (static export) + Tailwind CSS 4. Dark, one page.
 
-First, run the development server:
+## Run locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev          # http://localhost:3000
+npm run build        # static site in ./out
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Where to edit things
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| What | File |
+| --- | --- |
+| Name, summary, links, experience, skills, education | `src/data/profile.ts` |
+| Which GitHub projects show | `src/data/projects.config.ts` |
+| Colours and fonts | `src/app/globals.css` (`@theme`) |
+| Resume PDF | `public/assets/pdf/AjitGoud-resume.pdf` |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Choosing which GitHub projects appear
 
-## Learn More
+Projects are fetched from GitHub **at build time** (no API calls in the visitor's browser).
+You control the list three ways, in `src/data/projects.config.ts`:
 
-To learn more about Next.js, take a look at the following resources:
+1. **`featured`**: repos that always show, in the order listed. Use `overrides` to set a
+   title, description, highlight bullets, tech tags or a live-demo link.
+2. **`includeTopic`** (default `"portfolio"`): any public repo of yours with that GitHub topic
+   appears automatically. To show a repo, add the topic on GitHub; to hide it, remove it.
+   No code change, the next daily rebuild picks it up.
+3. **`exclude`**: repo names that never show.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Forks and archived repos are skipped unless listed in `featured`.
+If GitHub is unreachable during a build, `featured` projects still render from the config text.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy (GitHub Pages)
 
-## Deploy on Vercel
+`.github/workflows/deploy.yml` builds and deploys on every push to `master` and once a day.
+In the repo: **Settings > Pages > Build and deployment > Source: GitHub Actions**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Useful env vars for local builds: `GITHUB_TOKEN` (higher API rate limit),
+`GITHUB_API_URL` (point at a mock server for testing).

@@ -1,18 +1,13 @@
 import type { NextConfig } from "next";
-import createMDX from '@next/mdx';
 
-const withMDX = createMDX({
-  extension: /\.(md|mdx)$/,
-});
-
-
+// Static export: the site is plain HTML/CSS/JS, so it can be hosted on
+// GitHub Pages, Netlify, Vercel or any bucket. GitHub project data is
+// fetched at build time (see src/lib/github.ts), not in the visitor's browser.
 const nextConfig: NextConfig = {
-  /* config options here */
-  pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+  output: "export",
   reactStrictMode: true,
-  allowedDevOrigins: ["http://127.0.0.1:3000", "http://localhost:3000"],
+  images: { unoptimized: true },
+  trailingSlash: true,
 };
-
-module.exports = nextConfig;
 
 export default nextConfig;
