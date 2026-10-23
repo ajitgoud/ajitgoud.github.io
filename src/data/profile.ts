@@ -15,7 +15,7 @@ export const profile = {
     "Backend engineering by day, building and experimenting with AI systems along the way..",
 
   summary:
-    "Java Backend Engineer with 5.6+ years of software engineering experience across enterprise applications, backend services, data processing, and real-time systems. Experienced in building Spring Boot REST APIs, payment middleware, and data-processing pipelines, with expertise in Java, Spring Security, JPA/Hibernate, PostgreSQL, and distributed systems. Hands-on experience with Kafka, Redis, Docker, and Kubernetes, alongside developing GenAI solutions including voice-to-voice assistants with tool calling and agentic RAG systems using OpenAI, Groq, Spring AI, pgvector, and MCP.",
+    "Java Backend Engineer with 5.6+ years of software engineering experience across enterprise applications, backend services, data processing, and real-time systems. Experienced in building Spring Boot REST APIs, payment middleware, and data-processing pipelines, with expertise in Java, Spring Security, JPA/Hibernate, PostgreSQL, and distributed systems. Hands-on experience with Kafka, Redis, Docker, and Kubernetes, alongside developing GenAI solutions including voice-to-voice assistants with tool calling and agentic RAG systems using OpenAI, Groq, Spring AI, pgvector.",
 
   email: "ajitgoud.career@gmail.com",
   github: "https://github.com/ajitgoud",
@@ -43,25 +43,29 @@ export const experience: Role[] = [
     place: "Mumbai",
     start: "2024-02",
     end: "2026-07",
-    context: "Jio Tesseract, a smart-glasses platform",
+    context: "Java backend services, AI integration and real-time streaming",
     highlights: [
-      "Designed a modular SDK that encapsulates device communication, audio processing and API integrations, with defined interfaces between application components and external services.",
-      "Integrated LiveKit/WebRTC streaming into an AI-enabled workflow, supporting real-time video interactions and backend request monitoring.",
-      "Built AI proofs of concept on OpenAI and Groq APIs for translation, voice interaction, summarization and intent detection.",
-      "Prototyped reliable WebRTC file transfer with NACK-based retransmission and RSA/AES encryption.",
-      "Wrote the high-level and software architecture documents covering components, data flows and system integrations.",
+      "Implemented API authentication using Spring Security and JWT, securing backend endpoints with token-based authentication.",
+      "Implemented Redis-based API rate limiting to control request traffic and integrated Swagger/OpenAPI for REST API documentation and testing.",
+      "Containerized backend services using Docker and deployed applications on AWS.",
+      "Built voice-to-voice AI workflows using OpenAI and Groq APIs, implementing end-of-speech detection with amplitude-based audio analysis before integrating Silero VAD for more reliable speech detection.",
+      "Integrated LiveKit/WebRTC for real-time video streaming and configured backend services to generate JWT-based access tokens for secure streaming sessions.",
+      "Developed an AI-powered visual question-answering workflow that combined camera screenshots with voice input and returned AI-generated audio responses."
     ],
     stack: [
       "Java",
       "Spring Boot",
+      "Spring Security",
       "REST APIs",
       "JPA/Hibernate",
-      "Socket.IO",
-      "WebRTC",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "AWS",
       "LiveKit",
-      "RAG",
       "OpenAI",
       "Groq",
+      "Swagger/OpenAPI"
     ],
   },
   {
@@ -70,22 +74,21 @@ export const experience: Role[] = [
     place: "Mumbai",
     start: "2022-12",
     end: "2023-11",
-    context: "Connected-device and payments products",
+    context: "Java backend development, payment middleware and REST APIs",
     highlights: [
-      "Built a Java middleware for real-time UPI payments: generated dynamic QR codes from transaction data, pushed them to QR devices over serial communication, and managed device states across initiation, success, failure and idle.",
-      "Built an end-to-end ESL template platform: Spring Boot backend and REST APIs (create, edit, import, export, persist) with a React + Fabric.js canvas editor. Tag-based dynamic templates let one template serve every user.",
-      "Built REST APIs and backend workflows for a meeting-room solution (availability, scheduling) and a digital-signage platform (scheduling and delivery of images, video and web content).",
-      "In a small startup team, also shipped Android/BLE ESL apps (20% faster image transfer), a battery-analytics app, and a Java-to-Kotlin migration of a legacy app.",
+      "Developed Java middleware for real-time UPI payments, generating dynamic QR codes from transaction details, transmitting them to QR devices over serial communication, and managing transaction states across initiation, success, and failure.",
+      "Built an end-to-end Electronic Shelf Label (ESL) template platform using Spring Boot and REST APIs for template creation, editing, import, export, and persistence, integrated with a React and Fabric.js canvas editor. Implemented reusable, tag-based templates that allowed a single design to serve multiple users through runtime data binding.",
+      "Developed REST APIs and backend workflows for ESL management and digital-signage platforms, supporting content management, scheduling, and delivery of images, videos, and web content across devices."
     ],
     stack: [
       "Java",
       "Spring Boot",
       "REST APIs",
       "JPA/Hibernate",
-      "WebSockets",
-      "React",
-      "BLE",
-      "Serial communication",
+      "PostgreSQL",
+      "ReactJs",
+      "Fabric.js",
+      "Serial Communication"
     ],
   },
   {
@@ -96,20 +99,23 @@ export const experience: Role[] = [
     end: "2022-12",
     context: "Data processing and reporting platform",
     highlights: [
-      "Built and ran PySpark jobs with Hive queries on HDFS for large-scale data processing; validated new model versions, verified outputs and promoted them to higher environments.",
-      "Maintained a production reporting platform generating 200+ reports daily: monitored scheduled jobs, debugged production issues and kept delivery reliable.",
-      "Built a Flask + Jinja2 portal that automated model-testing workflows; supported Docker, Kubernetes and Jenkins CI/CD deployments. Three process improvements saved CAD 3,000 a year.",
+      "Developed and maintained PySpark jobs and Hive queries on HDFS for large-scale data processing, validating model outputs before promoting new model versions to higher environments.",
+      "Owned and maintained a production reporting platform generating 200+ reports daily, taking responsibility for job monitoring, production issue resolution, and reliable, on-time report delivery.",
+      "Built a Flask and Jinja2 portal to automate model-testing workflows, reducing manual effort and delivering process improvements that saved approximately CAD 3,000 annually.",
+      "Used Docker to containerize application components and supported deployments in Kubernetes environments.",
+      "Worked with Jenkins CI/CD pipelines to streamline build and deployment workflows and supported application deployments in AWS environments."
     ],
     stack: [
       "Java",
       "Python",
+      "Flask",
       "Apache Airflow",
-      "Spark",
-      "Hive",
-      "HDFS",
+      "PySpark",
       "Docker",
       "Kubernetes",
       "Jenkins",
+      "AWS",
+      "CI/CD"
     ],
   },
 ];
@@ -166,7 +172,7 @@ export const skillGroups: { name: string; items: string[] }[] = [
   },
   {
     name: "Real-time and AI",
-    items: ["WebRTC", "LiveKit", "OpenAI / Groq APIs", "RAG", "Tool calling", "MCP"],
+    items: ["WebRTC", "LiveKit", "OpenAI / Groq APIs", "RAG", "Tool calling"],
   },
   {
     name: "Also",
